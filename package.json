@@ -29,7 +29,7 @@
         "bootstrap": "4.4.1",
         "devicons": "^1.8.0",
         "fstream": "^1.0.12",
-        "jquery": "3.4.1",
+        "jquery": "3.5.0",
         "simple-line-icons": "^2.4.1"
     },
     "devDependencies": {

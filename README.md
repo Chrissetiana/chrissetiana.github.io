@@ -1,4 +1,4 @@
 # chrissetiana.github.io
 Personal Website
 
-<img src="img/screenshot.png" height="500">
+<img src="img/screenshot.jpg" height="500">

@@ -48,14 +48,12 @@
 ]{geometry}
 
 % pre-define some colors the user can choose from
-\definecolor{cvblue}{HTML}{0E5484}
-\definecolor{cvgreen}{HTML}{007170}
-\definecolor{cvred}{HTML}{8B0000}
-\definecolor{cvsidecolor}{HTML}{E7E7E7}
-\definecolor{cvsectioncolor}{HTML}{0395DE}
+\definecolor{cvpink}{HTML}{E47296}
+\definecolor{cvsidecolor}{HTML}{EFE9EB}
+\definecolor{cvsectioncolor}{HTML}{E47296}
 \definecolor{cvsubsectioncolor}{HTML}{4D4D4D}
 % set default values
-\colorlet{maincolor}{cvblue}
+\colorlet{maincolor}{cvpink}
 \colorlet{sidecolor}{cvsidecolor}
 \colorlet{sidetextcolor}{black}
 \colorlet{sectioncolor}{cvsectioncolor}
@@ -76,7 +74,7 @@
 \newlength\leftrightmargin%
 \newlength\sidebartextwidth
 % default values
-\setlength{\sidebarwidth}{0.34\paperwidth}
+\setlength{\sidebarwidth}{0.36\paperwidth}
 \setlength{\topbottommargin}{0.02\paperheight}
 \setlength{\leftrightmargin}{0.02\paperwidth}
 % user overwrites
@@ -275,7 +273,7 @@
 	{\color{sectioncolor}\normalfont\bfseries\LARGE}{}{0pt}{}
 \titlespacing*{\section}{0pt}{1.5ex}{1ex}
 
-% grey subsection style for right column
+% subsection style for right column
 \newcommand*{\cvsubsection}[1]{\subsection*{#1}}
 \titleformat{\subsection}%
 	{\color{subsectioncolor}\normalfont\large}{}{0pt}{}
@@ -302,7 +300,7 @@
 \newcommand*{\cvnameformat}{\Huge\color{maincolor}}
 
 % style for job title
-\newcommand*{\cvjobtitleformat}{\Large\color{black!80}}
+\newcommand*{\cvjobtitleformat}{\Large\color{black!60}}
 
 % mandatory personal information
 \newcommand*{\cvname}[1]{\renewcommand{\cvname}{#1}}
@@ -373,7 +371,7 @@
 }}
 \newcommand*{\cvcitizenship}[1]{\cvcustomdata{\faFlag}{#1}}
 \newcommand*{\cvgithub}[1]{\cvcustomdata{\faGithub}{\href{https://github.com/#1}{#1}}}
-\newcommand*{\cvlinkedin}[2]{\cvcustomdata{\faLinkedin}{\href{https://www.linkedin.com/in/#1}{#2}}}
+\newcommand*{\cvlinkedin}[2]{\cvcustomdata{\faLinkedin}{\href{#1}{#2}}}
 
 % TODO find a cleaner solution for consistent spacing
 \newcommand{\nameandjob}{%
